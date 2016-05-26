@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id = "@+id/xLinLayHomeCampaign"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+
+<!--
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/xActivityCampaign"
+            android:scrollbars="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/small_padding"
+            android:layout_marginRight="@dimen/small_padding"
+            android:layout_marginBottom="@dimen/small_padding"/>
+-->
+
+
+
+</LinearLayout>

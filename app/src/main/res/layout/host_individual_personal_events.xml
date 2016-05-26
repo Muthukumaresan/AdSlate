@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txteventType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Type"
+        android:textSize="@dimen/cell_pri_textSize"
+        android:padding="@dimen/margin_small"/>
+
+    <RadioGroup
+        android:id="@+id/radioEventType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom ="@dimen/skip_margin">
+
+        <RadioButton
+            android:id="@+id/radioMarriages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marriages"
+            android:textSize="@dimen/registration_text_size"
+            android:paddingLeft="@dimen/margin_small"
+            android:button="@drawable/radiobutton_selector"/>
+
+        <RadioButton
+            android:id="@+id/radioBirthdays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthdays"
+            android:textSize="@dimen/registration_text_size"
+            android:paddingLeft="@dimen/margin_small"
+            android:button="@drawable/radiobutton_selector"/>
+
+        <RadioButton
+            android:id="@+id/radioBaby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baby showers"
+            android:textSize="@dimen/registration_text_size"
+            android:paddingLeft="@dimen/margin_small"
+            android:button="@drawable/radiobutton_selector"/>
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/skip_margin"
+        android:weightSum="2">
+
+
+        <EditText
+            android:id ="@+id/xEtLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint = "Location"
+            android:padding="@dimen/margin_small"
+            android:singleLine="true"
+            android:textSize="@dimen/registration_text_size"
+            android:background="@drawable/edittext"
+            android:layout_weight="1.5"
+            android:layout_marginRight="@dimen/skip_margin"/>
+
+        <TextView
+            android:id ="@+id/xEtMapView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "Map view"
+            android:textSize="@dimen/registration_text_size"
+            android:textColor="@color/white"
+            android:padding="@dimen/margin_small"
+            android:singleLine="true"
+            android:background="@drawable/button"
+            android:layout_weight="0.5"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

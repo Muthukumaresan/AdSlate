@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_small"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id = "@+id/xTvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Title"
+        android:textColor="@color/purple"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textSize="@dimen/registration_text_size" />
+
+    <TextView
+        android:id = "@+id/xTvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Please Check All Details"
+        android:textColor="@color/purple"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textSize="@dimen/registration_text_size" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_small">
+
+        <TextView
+            android:id = "@+id/xTvYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "YES"
+            android:textColor="@color/orange"
+            android:paddingLeft="@dimen/skip_margin"
+            android:paddingRight="@dimen/skip_margin"
+            android:textSize="@dimen/registration_text_size"
+            android:padding="@dimen/margin_small"/>
+
+
+        <TextView
+            android:id = "@+id/xTvNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "NO"
+            android:textColor="@color/orange"
+            android:paddingLeft="@dimen/skip_margin"
+            android:paddingRight="@dimen/skip_margin"
+            android:textSize="@dimen/registration_text_size"
+            android:padding="@dimen/margin_small"/>
+
+        <TextView
+            android:id = "@+id/xTvOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "OK"
+            android:textColor="@color/orange"
+            android:paddingLeft="@dimen/skip_margin"
+            android:paddingRight="@dimen/skip_margin"
+            android:textSize="@dimen/registration_text_size"
+            android:padding="@dimen/margin_small"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

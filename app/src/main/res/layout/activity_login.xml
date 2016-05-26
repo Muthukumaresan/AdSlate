@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android.support.design="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.ashish.adslate.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xRlActionBar1"
+        android:background="@color/purple"
+        android:padding="@dimen/image_padding">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xIvBackButton"
+            android:src="@drawable/ic_ad_slate_action_bar_back_black"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/text_margin_left"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/skip_margin"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:paddingBottom="@dimen/skip_margin">
+
+            <EditText
+                android:id ="@+id/xEtEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "Email ID"
+                android:padding="@dimen/margin_small"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:paddingBottom="@dimen/skip_margin">
+
+            <EditText
+                android:id ="@+id/xEtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/margin_small"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id = "@+id/xTvLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "LOGIN"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:padding="@dimen/registration_text_size"
+            android:layout_margin = "@dimen/help_margin"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"/>
+
+
+        <TextView
+            android:id = "@+id/xTvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:text="Forgot password? "
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/registration_text_size" />
+
+        <View
+            android:id = "@+id/xVwLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/divider"
+            android:layout_marginTop="@dimen/skip_margin"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New for AdSlate ?"
+        android:textSize="@dimen/registration_text_size"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/help_margin"
+        android:layout_marginBottom="@dimen/margin_small"/>
+
+
+    <TextView
+        android:id="@+id/xTvRegisterNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Now"
+        android:textColor="@color/orange"
+        android:padding="@dimen/registration_text_size"
+        android:textSize="@dimen/cell_pri_textSize"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/xVwLine"
+        android:background="@color/button_grey"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"/>
+
+
+</LinearLayout>

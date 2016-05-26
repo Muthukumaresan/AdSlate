@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/xTLayAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:hintTextAppearance="@style/flaotingtext"
+        android:paddingBottom="@dimen/skip_margin"
+        app:counterTextAppearance="@style/counterText">
+
+        <EditText
+            android:id="@+id/xEtAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:hint="Age"
+            android:singleLine="true"
+            android:textSize="@dimen/registration_text_size"
+            android:includeFontPadding="true"
+            android:padding="@dimen/margin_small"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textOccupation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Occupation"
+        android:textSize="@dimen/cell_pri_textSize"
+        android:padding="@dimen/margin_small"/>
+
+
+    <RadioGroup
+        android:id="@+id/radioOccupation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/skip_margin">
+
+        <RadioButton
+            android:id="@+id/radioWorking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Working"
+            android:textSize="@dimen/registration_text_size"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/margin_small"
+            android:button="@drawable/radiobutton_selector"/>
+
+        <RadioButton
+            android:id="@+id/radioStudying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Studying"
+            android:textSize="@dimen/registration_text_size"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/margin_small"
+            android:button="@drawable/radiobutton_selector"/>
+
+    </RadioGroup>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/xTLayInstitution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:hintTextAppearance="@style/flaotingtext"
+        android:paddingBottom="@dimen/skip_margin">
+
+        <EditText
+            android:id="@+id/xEtInstitution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:hint="Institution / Organization name"
+            android:singleLine="true"
+            android:textSize="@dimen/registration_text_size"
+            android:padding="@dimen/margin_small"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/xTLayCommute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:hintTextAppearance="@style/flaotingtext"
+        android:paddingBottom="@dimen/skip_margin">
+
+        <EditText
+            android:id="@+id/xEtCommute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:hint="Daily commute (kms)"
+            android:singleLine="true"
+            android:textSize="@dimen/registration_text_size"
+            android:padding="@dimen/margin_small"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/xTLayDaysToWear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:hintTextAppearance="@style/flaotingtext"
+        android:paddingBottom="@dimen/skip_margin">
+
+        <EditText
+            android:id="@+id/xEtDaysToWear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:hint="How many days a week - willing to wear"
+            android:singleLine="true"
+            android:textSize="@dimen/registration_text_size"
+            android:padding="@dimen/margin_small"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>

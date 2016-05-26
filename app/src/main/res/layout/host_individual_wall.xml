@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id = "@+id/xWallLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtWallSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="Wall size (optional)"
+                android:textSize="@dimen/cell_pri_textSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/skip_margin"
+                android:weightSum="2">
+
+
+                <EditText
+                    android:id ="@+id/xEtWidth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint = "Width"
+                    android:padding="@dimen/margin_small"
+                    android:singleLine="true"
+                    android:textSize="@dimen/registration_text_size"
+                    android:background="@drawable/edittext"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/skip_margin"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext">
+
+                    <Spinner
+                        android:id = "@+id/xSpWidthWall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dropDownSelector="@android:color/transparent"
+                        android:background="@android:color/transparent"
+                        android:layout_centerVertical="true" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/registration_text_size"
+                            android:layout_weight="1.9"
+                            android:layout_gravity="center_vertical"
+                            android:textColor = "@color/black"
+                            android:padding="@dimen/margin_small"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src = "@drawable/ic_arrow_drop_down_14"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/skip_margin"
+                android:weightSum="2">
+
+
+                <EditText
+                    android:id ="@+id/xEtHeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint = "Height"
+                    android:padding="@dimen/margin_small"
+                    android:singleLine="true"
+                    android:textSize="@dimen/registration_text_size"
+                    android:background="@drawable/edittext"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/skip_margin"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext">
+
+                    <Spinner
+                        android:id = "@+id/xSpHeightWall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dropDownSelector="@android:color/transparent"
+                        android:background="@android:color/transparent"
+                        android:layout_centerVertical="true" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/registration_text_size"
+                            android:layout_weight="1.9"
+                            android:layout_gravity="center_vertical"
+                            android:textColor = "@color/black"
+                            android:padding="@dimen/margin_small"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src = "@drawable/ic_arrow_drop_down_14"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/skip_margin"
+                android:weightSum="2">
+
+
+                <EditText
+                    android:id ="@+id/xEtArea"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint = "Area"
+                    android:padding="@dimen/margin_small"
+                    android:singleLine="true"
+                    android:textSize="@dimen/registration_text_size"
+                    android:background="@drawable/edittext"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/skip_margin"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext">
+
+                    <Spinner
+                        android:id = "@+id/xSpAreaWall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dropDownSelector="@android:color/transparent"
+                        android:background="@android:color/transparent"
+                        android:layout_centerVertical="true" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/registration_text_size"
+                            android:layout_weight="1.9"
+                            android:layout_gravity="center_vertical"
+                            android:textColor = "@color/black"
+                            android:padding="@dimen/margin_small"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src = "@drawable/ic_arrow_drop_down_14"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/roadTraffic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="Road traffic"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:padding="@dimen/margin_small"/>
+
+        <RadioGroup
+            android:id="@+id/radioSpace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/skip_margin"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High"
+                android:textSize="@dimen/registration_text_size"
+                android:paddingLeft="@dimen/margin_small"
+                android:layout_weight="1"
+                android:button ="@drawable/radiobutton_selector"/>
+
+            <RadioButton
+                android:id="@+id/radioMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:textSize="@dimen/registration_text_size"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/margin_small"
+                android:button ="@drawable/radiobutton_selector"/>
+
+            <RadioButton
+                android:id="@+id/radioRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regular"
+                android:textSize="@dimen/registration_text_size"
+                android:layout_weight="1"
+                android:button ="@drawable/radiobutton_selector"
+                android:paddingLeft="@dimen/margin_small"/>
+
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/skip_margin"
+            android:weightSum="2">
+
+
+            <EditText
+                android:id ="@+id/xEtLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint = "Location"
+                android:padding="@dimen/margin_small"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext"
+                android:layout_weight="1.5"
+                android:layout_marginRight="@dimen/skip_margin"/>
+
+            <TextView
+                android:id ="@+id/xEtMapView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text = "Map view"
+                android:textSize="@dimen/registration_text_size"
+                android:textColor="@color/white"
+                android:padding="@dimen/margin_small"
+                android:singleLine="true"
+                android:background="@drawable/button"
+                android:layout_weight="0.5"
+                android:layout_marginRight="@dimen/skip_margin"
+                android:gravity="center_horizontal"/>
+
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLaySpaceAddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:paddingBottom="@dimen/skip_margin">
+
+            <EditText
+                android:id="@+id/xEtSpaceAddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:hint="Space address"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:padding="@dimen/margin_small"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

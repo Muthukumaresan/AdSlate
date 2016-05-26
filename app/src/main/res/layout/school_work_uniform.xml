@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/skip_margin"
+    android:layout_marginRight="@dimen/skip_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id ="@+id/xTvUploadBrandLbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_padding"
+            android:text = "Central large logo"
+            android:textSize="@dimen/cell_pri_textSize" />
+
+
+        <ImageView
+            android:id = "@+id/xIvBrandlogo"
+            android:layout_width="@dimen/img_width"
+            android:layout_height="@dimen/img_height"
+            android:background="@drawable/img_thumbnail"
+            android:layout_marginBottom="@dimen/margin_small"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id ="@+id/xTvSignImgLbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_small"
+            android:text = "Small sign of the brand"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:layout_marginTop="@dimen/margin_small" />
+
+        <ImageView
+            android:id = "@+id/xIvSignImg"
+            android:layout_width="@dimen/img_width"
+            android:layout_height="@dimen/img_height"
+            android:background="@drawable/img_thumbnail"
+            android:layout_marginBottom="@dimen/margin_small"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginTop="@dimen/margin_small"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/skip_margin"
+            android:weightSum="2">
+
+
+            <EditText
+                android:id ="@+id/xEtLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint = "Location"
+                android:padding="@dimen/margin_small"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext"
+                android:layout_weight="1.5"
+                android:layout_marginRight="@dimen/skip_margin"/>
+
+            <TextView
+                android:id ="@+id/xEtMapView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text = "Map view"
+                android:textSize="@dimen/registration_text_size"
+                android:textColor="@color/white"
+                android:padding="@dimen/margin_small"
+                android:singleLine="true"
+                android:background="@drawable/button"
+                android:layout_weight="0.5"
+                android:layout_marginRight="@dimen/skip_margin"
+                android:gravity="center_horizontal"/>
+
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:paddingBottom="@dimen/margin_small">
+
+            <EditText
+                android:id ="@+id/xEtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "Address"
+                android:padding="@dimen/margin_small"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

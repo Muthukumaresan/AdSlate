@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adslate.activities.HostSpace"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xRelLayHeader"
+        android:background="@color/purple"
+        android:padding="@dimen/image_padding"
+        android:layout_marginBottom="@dimen/skip_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xIvBackButton"
+            android:src="@drawable/ic_ad_slate_action_bar_back_black"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Host space"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/text_margin_left"/>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_above="@+id/xTvHostSpace"
+        android:layout_below="@+id/xRelLayHeader">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtSpace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hosted by"
+                android:textSize="@dimen/cell_pri_textSize"
+                android:padding="@dimen/margin_small"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/xRtSpace"
+                android:background="@drawable/edittext"
+                android:layout_marginBottom="@dimen/skip_margin">
+
+                <Spinner
+                    android:id="@+id/xSpHostedBy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:dropDownSelector="@android:color/transparent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id = "@+id/xTvHostedBy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.9"
+                        android:textSize="@dimen/registration_text_size"
+                        android:padding="@dimen/margin_small"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow_drop_down_14" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txtSpaceType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Space type"
+                android:textSize="@dimen/cell_pri_textSize"
+                android:padding="@dimen/margin_small"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittext"
+                android:layout_marginBottom="@dimen/skip_margin">
+
+                <Spinner
+                    android:id="@+id/xSpSpaceType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:dropDownSelector="@android:color/transparent"
+                    android:spinnerMode="dialog"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.9"
+                        android:textSize="@dimen/registration_text_size"
+                        android:padding="@dimen/margin_small"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow_drop_down_14" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/xLinLayWall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/wallType"
+                    layout="@layout/host_individual_wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xLinLayVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                  <include
+                    android:id="@+id/vehicle"
+                    layout="@layout/host_individual_vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xLinLayPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/personal"
+                    layout="@layout/host_individual_people"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xLinLayPerEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+               <include
+                    android:id="@+id/perEvents"
+                    layout="@layout/host_individual_personal_events"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xLinLayGate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/gate"
+                    layout="@layout/host_individual_gate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/type6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+               <!-- <include
+                    android:id="@+id/wallType"
+                    layout="@layout/host_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xLinLayhostEnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+               <include
+                    android:id="@+id/hostEnt"
+                    layout="@layout/host_enterprise"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xLinLayFleetVehi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+               <include
+                    android:id="@+id/fleetVehType"
+                    layout="@layout/host_enterprise_commercial"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xLinLayUniforms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/Uniforms"
+                    layout="@layout/school_work_uniform"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xLinLayRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/Radio"
+                    layout="@layout/radio_mentions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xLinLayCampus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/Campus"
+                    layout="@layout/corporate_school_campus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xLinLayEntEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/EntEvents"
+                    layout="@layout/corporate_school_events"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/xLinLaybillboards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+              <include
+                    android:id="@+id/billboardype"
+                    layout="@layout/host_enterprise_billboards"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xLinLayIndoorSpc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/IndoorSpaces"
+                    layout="@layout/ent_indoor_spaces"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xLinLayNamingRights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/NamingRights"
+                    layout="@layout/naming_rights"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/xTLayOwnDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:hintTextAppearance="@style/flaotingtext"
+                android:paddingBottom="@dimen/skip_margin">
+
+                <EditText
+                    android:id="@+id/disclaimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="Ownership disclaimer"
+                    android:singleLine="true"
+                    android:textSize="@dimen/registration_text_size"
+                    android:includeFontPadding="true"
+                    android:padding="@dimen/margin_small"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id ="@+id/xTvUploadCamImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "Upload images"
+                android:textColor="@color/text_header"
+                android:textSize="@dimen/cell_pri_textSize"
+                android:padding="@dimen/margin_small"/>
+
+            <LinearLayout
+                android:id = "@+id/xLinLayImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/skip_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_small">
+
+                    <ImageView
+                        android:id = "@+id/xIvSpcImg1"
+                        android:layout_width="@dimen/img_width"
+                        android:layout_height="@dimen/img_height"
+                        android:background="@drawable/img_thumbnail"
+                        android:layout_marginRight="@dimen/margin_small" />
+
+                    <ImageView
+                        android:id = "@+id/xIvSpcImg2"
+                        android:layout_width="@dimen/img_width"
+                        android:layout_height="@dimen/img_height"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:background="@drawable/img_thumbnail"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id = "@+id/xIvSpcImg3"
+                        android:layout_width="@dimen/img_width"
+                        android:layout_height="@dimen/img_height"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:background="@drawable/img_thumbnail"
+                        android:visibility="gone"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id = "@+id/xLinLayImgLay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/margin_small">
+
+                    <ImageView
+                        android:id = "@+id/xIvSpcImg4"
+                        android:layout_width="@dimen/img_width"
+                        android:layout_height="@dimen/img_height"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:background="@drawable/img_thumbnail"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id = "@+id/xIvSpcImg5"
+                        android:layout_width="@dimen/img_width"
+                        android:layout_height="@dimen/img_height"
+                        android:background="@drawable/img_thumbnail"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/divider"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/skip_margin"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin">
+
+
+            <CheckBox
+                android:id = "@+id/xCheckBoxTermsCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/checkbox_selector"/>
+
+            <TextView
+                android:id = "@+id/xTvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Terms &amp; condition"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/registration_text_size"
+                android:padding="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_gravity="center_vertical"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id = "@+id/xTvHostSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "HOST SPACE"
+        android:textSize="@dimen/cell_pri_textSize"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:padding="@dimen/registration_text_size"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

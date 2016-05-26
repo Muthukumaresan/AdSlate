@@ -1,0 +1,55 @@
+<resources>
+
+
+
+    <!--Splash-->
+    <dimen name = "splash_text_size">22sp</dimen>
+
+    <!--Help-->
+    <dimen name = "text_size_skip">20sp</dimen>
+    <dimen name = "skip_margin">21dp</dimen>
+
+    <!--Help fragment-->
+    <dimen name = "help_margin">50dp</dimen>
+    <dimen name = "circular_indicator_radius">6dp</dimen>
+
+    <!-- Who you are screen-->
+    <dimen name = "image_padding">14dp</dimen>
+    <dimen name = "header_text">20sp</dimen>
+    <dimen name ="text_margin_left">40dp</dimen>
+    <dimen name ="text_primary">22sp</dimen>
+    <dimen name ="text_Button">16sp</dimen>
+
+
+    <!--Registration-->
+    <dimen name = "margin_small">15dp</dimen>
+    <dimen name = "registration_text_size">18sp</dimen>
+    <dimen name="profile_image_width">110dp</dimen>
+    <dimen name="profile_image_height">110dp</dimen>
+
+    <!--Home-->
+    <dimen name = "cell_width">180dp</dimen>
+    <dimen name = "cell_height">180dp</dimen>
+    <dimen name = "cell_pri_textSize">16sp</dimen>
+    <dimen name = "cell_sec_textSize">14sp</dimen>
+
+
+
+    <!--Common-->
+    <dimen name = "line_width">2dp</dimen>
+    <dimen name = "tab_width">1dp</dimen>
+
+    <!--create campaign-->
+    <dimen name = "img_height">80dp</dimen>
+    <dimen name = "img_width">80dp</dimen>
+    <dimen name = "margin_top">17dp</dimen>
+    <dimen name = "logo_width">160dp</dimen>
+    <dimen name = "logo_height">60dp</dimen>
+    <dimen name = "cont_img_height">60dp</dimen>
+    <dimen name = "cont_img_width">60dp</dimen>
+
+
+
+
+
+</resources>

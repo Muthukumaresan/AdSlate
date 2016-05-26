@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id = "@+id/xLinLayHomeCampaign"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "Campaigns matching your spaces "
+            android:textSize="@dimen/registration_text_size"
+            android:padding="@dimen/small_padding"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"/>
+
+        <GridView
+            android:id="@+id/gridCampaign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="auto_fit"
+            android:layout_margin="@dimen/margin_small"
+            android:verticalSpacing="@dimen/margin_small"
+            android:horizontalSpacing="@dimen/margin_small"
+            android:scrollbars="none"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout >

@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.adslate.Help"
+    android:layout_marginTop ="@dimen/help_margin">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src = "@drawable/ic_ad_slate_intro3_image"
+        android:layout_marginTop ="@dimen/help_margin" />
+
+
+
+    <TextView android:text="INDIVIDUAL OR ENTERPRISE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_skip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop ="@dimen/help_margin"
+        android:maxLines="1"/>
+
+    <TextView
+        android:text="Type of Organization (Industry, School, Apartment Complex, NGO, Political party, Restaurant, Radio station etc. if other-(please specify [Specified type could come in for app, Type of Organization (Industry, School, Apartment Complex, NGO, Political party, Restaurant, Radio station etc. if other-(please specify [Specified type could come in for app"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/black"
+        android:textSize="@dimen/registration_text_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop ="@dimen/skip_margin"
+        android:layout_marginLeft ="@dimen/skip_margin"
+        android:layout_marginRight ="@dimen/skip_margin"
+        android:inputType="textMultiLine"/>
+
+
+
+
+
+
+
+</LinearLayout>

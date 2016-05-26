@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin_small">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_small">
+
+        <TextView
+            android:id="@+id/xTvOrderno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OrderNo"
+            android:textSize="@dimen/registration_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xTvDuration"
+            android:text="Duration"
+            android:textSize="@dimen/registration_text_size"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_small">
+
+        <TextView
+            android:id="@+id/xTvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date And Time"
+            android:textSize="@dimen/registration_text_size" />
+
+        <TextView
+            android:id="@+id/xTvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="@dimen/registration_text_size"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@color/divider"/>
+
+
+</LinearLayout>

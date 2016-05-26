@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id = "@+id/xRelLayTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:padding="@dimen/image_padding">
+
+        <ImageView
+            android:id = "@+id/xIvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/ic_ad_slate_action_bar_back_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/xIvBack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:text = "Mobile verification"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/xRelLayTitle">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/xIvBack"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/skip_margin"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginBottom="@dimen/skip_margin"
+        android:text = "Ecxtrerpreneru hodfydbv ncubw cgv vbecuewcb \n vbv hvc chvwcv cvew"
+        android:textColor="@color/black"
+        android:textSize="@dimen/registration_text_size"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id ="@+id/xTvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "Email"
+        android:padding="@dimen/small_padding"
+        android:singleLine="true"
+        android:textSize="@dimen/registration_text_size"
+        android:background="@drawable/edittext"
+        android:layout_margin="@dimen/margin_small" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/xTLayPhNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/flaotingtext" >
+
+        <EditText
+            android:id ="@+id/xEtPhNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint = "Phone Number"
+            android:padding="@dimen/small_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/registration_text_size"
+            android:inputType="number"
+            android:background="@drawable/edittext"
+            android:layout_margin="@dimen/margin_small" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/xTLayOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/flaotingtext" >
+
+        <EditText
+            android:id ="@+id/xEtOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint = "OTP"
+            android:padding="@dimen/small_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/registration_text_size"
+            android:background="@drawable/edittext"
+            android:layout_margin="@dimen/margin_small" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id = "@+id/xTvVerifyOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "Verify OTP"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/skip_margin"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button"
+            android:paddingLeft="@dimen/skip_margin"
+            android:paddingRight="@dimen/skip_margin"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:textSize="@dimen/registration_text_size"
+            android:visibility="visible"
+            android:gravity="center_horizontal"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/xIvBack"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/skip_margin"
+        android:text = "We just sent you confirmation code \n It should arrive shortly"
+        android:textColor="@color/black"
+        android:textSize="@dimen/registration_text_size"
+        android:gravity="center_horizontal"/>
+
+
+
+       </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "Dint get the confirmation code?"
+            android:padding="@dimen/skip_margin"
+            android:textSize="@dimen/registration_text_size"
+            android:visibility="visible"
+            android:gravity="center_horizontal" />
+
+
+
+        <TextView
+            android:id = "@+id/xTvResendOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "Resend OTP"
+            android:textColor="@color/orange"
+            android:background="@color/button_grey"
+            android:padding="@dimen/skip_margin"
+            android:textSize="@dimen/registration_text_size"
+            android:visibility="visible"
+            android:gravity="center_horizontal" />
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

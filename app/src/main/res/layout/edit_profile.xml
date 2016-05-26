@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id = "@+id/xScrollEdit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_margin="@dimen/margin_small"
+        android:layout_above="@+id/xTvEditProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/skip_margin">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "John Appleseed"
+            android:textColor="@color/black"
+            android:textSize="@dimen/registration_text_size"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/skip_margin"/>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "JohnAppleseed@gmail.com"
+            android:textSize="@dimen/registration_text_size"
+           android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_small"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Edit Name"
+        android:background="@color/button_grey"
+        android:padding="@dimen/registration_text_size"
+        android:layout_marginTop="@dimen/skip_margin"
+        android:textSize="@dimen/cell_pri_textSize"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@drawable/edittext"
+        android:padding="@dimen/margin_small"
+        android:hint = "Full Name"
+        android:textSize="@dimen/header_text"/>
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Edit Email"
+        android:background="@color/button_grey"
+        android:padding="@dimen/registration_text_size"
+        android:layout_marginTop="@dimen/skip_margin"
+        android:textSize="@dimen/cell_pri_textSize"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@drawable/edittext"
+            android:padding="@dimen/margin_small"
+            android:hint = "Email"
+            android:textSize="@dimen/header_text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Change Password"
+        android:textSize="@dimen/cell_pri_textSize"
+        android:background="@color/button_grey"
+        android:padding="@dimen/registration_text_size"
+        android:layout_marginTop="@dimen/skip_margin"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@drawable/edittext"
+            android:padding="@dimen/margin_small"
+            android:hint = "Old password"
+            android:textSize="@dimen/header_text"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@drawable/edittext"
+            android:padding="@dimen/margin_small"
+            android:hint = "New password"
+            android:textSize="@dimen/header_text"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@drawable/edittext"
+            android:padding="@dimen/margin_small"
+            android:hint = "Confirm password"
+            android:textSize="@dimen/header_text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Change Mobile Number"
+        android:background="@color/button_grey"
+        android:padding="@dimen/skip_margin"
+        android:layout_marginTop="@dimen/skip_margin"
+        android:textSize="@dimen/registration_text_size"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@drawable/edittext"
+            android:padding="@dimen/margin_small"
+            android:hint = "Mobile number"
+            android:textSize="@dimen/header_text"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "Change Address"
+            android:background="@color/button_grey"
+            android:padding="@dimen/registration_text_size"
+            android:layout_marginTop="@dimen/skip_margin"
+            android:textSize="@dimen/cell_pri_textSize"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@drawable/edittext"
+            android:padding="@dimen/margin_small"
+            android:hint = "Address"
+            android:textSize="@dimen/header_text"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id = "@+id/xTvEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Edit Profile"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:padding="@dimen/registration_text_size"
+        android:textSize="@dimen/cell_pri_textSize"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true" />
+
+
+
+</RelativeLayout>

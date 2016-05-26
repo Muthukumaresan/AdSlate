@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Business description"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:padding="@dimen/margin_small"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayBusinessDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="140"
+            app:counterTextAppearance="@style/counterText"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:paddingBottom="@dimen/skip_margin">
+
+            <EditText
+                android:id ="@+id/xEtBusinessDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_small"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/registration_text_size"
+                android:maxLength="140"
+                android:background="@drawable/descbackground"
+                android:minLines="5"
+                android:gravity="top"
+                android:lineSpacingExtra="10dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Space description"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:padding="@dimen/margin_small"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLaySpcDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="140"
+            app:counterTextAppearance="@style/counterText"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:paddingBottom="@dimen/margin_small">
+
+            <EditText
+                android:id ="@+id/xEtSpcDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_small"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/registration_text_size"
+                android:maxLength="140"
+                android:background="@drawable/descbackground"
+                android:minLines="5"
+                android:gravity="top"
+                android:lineSpacingExtra="10dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Signboard size"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:padding="@dimen/margin_small"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/skip_margin"
+            android:weightSum="2">
+
+
+            <EditText
+                android:id ="@+id/xEtWidth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint = "Width"
+                android:padding="@dimen/margin_small"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/skip_margin"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittext">
+
+                <Spinner
+                    android:id = "@+id/xSpWidthCampus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownSelector="@android:color/transparent"
+                    android:background="@android:color/transparent"
+                    android:layout_centerVertical="true" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/registration_text_size"
+                        android:layout_weight="1.9"
+                        android:layout_gravity="center_vertical"
+                        android:textColor = "@color/black"
+                        android:padding="@dimen/margin_small"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src = "@drawable/ic_arrow_drop_down_14"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/skip_margin"
+            android:weightSum="2">
+
+
+            <EditText
+                android:id ="@+id/xEtHeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint = "Height"
+                android:padding="@dimen/margin_small"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/skip_margin"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittext">
+
+                <Spinner
+                    android:id = "@+id/xSpHeightCampus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownSelector="@android:color/transparent"
+                    android:background="@android:color/transparent"
+                    android:layout_centerVertical="true" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/registration_text_size"
+                        android:layout_weight="1.9"
+                        android:layout_gravity="center_vertical"
+                        android:textColor = "@color/black"
+                        android:padding="@dimen/margin_small"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src = "@drawable/ic_arrow_drop_down_14"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/skip_margin"
+            android:weightSum="2">
+
+
+            <EditText
+                android:id ="@+id/xEtArea"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint = "Area"
+                android:padding="@dimen/margin_small"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/skip_margin"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittext">
+
+                <Spinner
+                    android:id = "@+id/xSpAreaCampus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownSelector="@android:color/transparent"
+                    android:background="@android:color/transparent"
+                    android:layout_centerVertical="true" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/registration_text_size"
+                        android:layout_weight="1.9"
+                        android:layout_gravity="center_vertical"
+                        android:textColor = "@color/black"
+                        android:padding="@dimen/margin_small"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src = "@drawable/ic_arrow_drop_down_14"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/skip_margin"
+            android:weightSum="2">
+
+
+            <EditText
+                android:id ="@+id/xEtRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint = "Quoted rate"
+                android:padding="@dimen/margin_small"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/skip_margin"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittext">
+
+                <Spinner
+                    android:id = "@+id/xSpPayMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownSelector="@android:color/transparent"
+                    android:background="@android:color/transparent"
+                    android:layout_centerVertical="true" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/registration_text_size"
+                        android:layout_weight="1.9"
+                        android:layout_gravity="center_vertical"
+                        android:textColor = "@color/black"
+                        android:padding="@dimen/margin_small"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src = "@drawable/ic_arrow_drop_down_14"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.SpaceDetailsPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xRlActionBar1"
+        android:background="@color/purple"
+        android:padding="@dimen/image_padding"
+        android:layout_marginBottom="@dimen/margin_small">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xIvBackButton"
+            android:src="@drawable/ic_ad_slate_action_bar_back_black"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id = "@+id/xTvSpcNameHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text"
+            android:text = "Vehicle "
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/text_margin_left"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/xRlActionBar1"
+        android:layout_above="@+id/xTvLike">
+
+        <TextView
+            android:id = "@+id/xTvSpcName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "Space Name"
+            android:textColor = "@color/black"
+            android:textSize="@dimen/splash_text_size"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:padding="@dimen/small_padding" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:weightSum="2">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/xRelLaySpcType"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id = "@+id/xIvSpcType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_taxi_14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/skip_margin"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_toRightOf="@+id/xIvSpcType">
+
+                    <TextView
+                        android:id = "@+id/xTvSpcType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type:"
+                        android:textSize="@dimen/cell_pri_textSize"
+                        android:textColor="@color/grey"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vehicle"
+                        android:textSize="@dimen/registration_text_size"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_toRightOf="@+id/xTvSpcType"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/line_width"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:layout_toRightOf="@+id/xRelLaySpcType"
+                android:layout_gravity="center_vertical" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/xRelLaySpcCst"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id = "@+id/xIvSpcCst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_money_14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/skip_margin"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_toRightOf="@+id/xIvSpcCst">
+
+                    <TextView
+                        android:id = "@+id/xTvSpcCst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="70,00,00,000"
+                        android:textSize="@dimen/registration_text_size"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INR/month"
+                        android:textSize="@dimen/cell_pri_textSize"
+                        android:textColor="@color/grey"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_toRightOf="@+id/xTvSpcCst"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/xRelLayLocation"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id = "@+id/xIvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_map_14"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/skip_margin"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indiranagar"
+                    android:textSize="@dimen/registration_text_size"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/xIvLocation"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/line_width"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:layout_toRightOf="@+id/xRelLayLocation"
+            android:layout_gravity="center_vertical" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/xRelLaySubTimeFrame"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id = "@+id/xIvSubTimeFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_calander_14"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/skip_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/xIvSubTimeFrame"
+                android:layout_marginLeft="@dimen/margin_small">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textSize="@dimen/registration_text_size"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="days left"
+                    android:textSize="@dimen/cell_pri_textSize"
+                    android:textColor="@color/grey"
+                    android:layout_marginLeft="@dimen/margin_small"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id = "@+id/xVpImages"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cell_height"
+            android:layout_marginTop="@dimen/skip_margin" />
+
+        <android.support.design.widget.TabLayout
+            android:id = "@+id/xTabSpcDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMaxWidth="0dp"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/divider"
+            app:tabTextAppearance="@style/TabText"/>
+
+
+        <android.support.v4.view.ViewPager
+            android:id = "@+id/xVpSpcDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id= "@+id/xTvLike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LIKE"
+        android:textColor="@color/white"
+        android:padding="@dimen/registration_text_size"
+        android:textSize="@dimen/registration_text_size"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/xVwLine"
+        android:background="@color/orange"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

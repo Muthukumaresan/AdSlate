@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.adslate.activities.CreateCampaign"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xRelLayHeader"
+        android:background="@color/purple"
+        android:padding="@dimen/image_padding"
+        android:layout_marginBottom="@dimen/skip_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xIvBackButton"
+            android:src="@drawable/ic_ad_slate_action_bar_back_black"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create campaign"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/text_margin_left"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id = "@+id/xScrCereateCam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_above="@+id/xTvCreateCampaign"
+        android:layout_below="@+id/xRelLayHeader">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/xTLayCamDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/flaotingtext"
+                android:paddingBottom="@dimen/skip_margin">
+
+                <EditText
+                    android:id ="@+id/xEtFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint = "Campaign Description"
+                    android:singleLine="true"
+                    android:textSize="@dimen/registration_text_size"
+                    android:background="@drawable/edittext"
+                    android:padding = "@dimen/margin_small"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id ="@+id/xTvUploadLogoLbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "Upload logo"
+                android:textSize="@dimen/cell_pri_textSize"
+                android:textColor="@color/text_header"
+                android:padding = "@dimen/margin_small" />
+
+            <ImageView
+                android:id = "@+id/xIvCamLogo"
+                android:layout_width="@dimen/logo_width"
+                android:layout_height="@dimen/logo_height"
+                android:background="@drawable/img_logo"
+                android:layout_marginBottom="@dimen/margin_small"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:background="@color/divider"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/xTLayCamText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/flaotingtext"
+                android:paddingBottom="@dimen/skip_margin"
+                android:layout_marginTop="@dimen/skip_margin">
+
+                <EditText
+                    android:id ="@+id/xEtCamTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint = "Text to display with campaign image"
+                    android:singleLine="true"
+                    android:textSize="@dimen/registration_text_size"
+                    android:background="@drawable/edittext"
+                    android:padding = "@dimen/margin_small"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id ="@+id/xTvTargetedLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "Targeted locations"
+                android:textSize="@dimen/cell_pri_textSize"
+                android:textColor="@color/text_header"
+                android:padding = "@dimen/margin_small"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/skip_margin"
+                android:weightSum="3">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext"
+                    android:layout_marginRight="@dimen/skip_margin">
+
+                    <Spinner
+                        android:id = "@+id/xSpinnerCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dropDownSelector="@android:color/transparent"
+                        android:background="@android:color/transparent"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_centerVertical="true">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/registration_text_size"
+                            android:textColor = "@color/black"
+                            android:layout_weight="1.9"
+                            android:layout_gravity="center_vertical" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src = "@drawable/ic_arrow_drop_down_14"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext"
+                    android:layout_marginRight="@dimen/skip_margin">
+
+                    <Spinner
+                        android:id = "@+id/xSpinnerState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:dropDownSelector="@android:color/transparent"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_centerVertical="true">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/registration_text_size"
+                            android:layout_weight="1.9"
+                            android:layout_gravity="center_vertical"
+                            android:textColor = "@color/black"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src = "@drawable/ic_arrow_drop_down_14"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext">
+
+                    <Spinner
+                        android:id = "@+id/xSpinnerCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:dropDownSelector="@android:color/transparent"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_centerVertical="true">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/registration_text_size"
+                            android:layout_weight="1.9"
+                            android:layout_gravity="center_vertical"
+                            android:textColor = "@color/black"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src = "@drawable/ic_arrow_drop_down_14"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/skip_margin"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/help_margin">
+
+                    <TextView
+                        android:id ="@+id/xTvStartDateLbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Start date"
+                        android:padding = "@dimen/margin_small"
+                        android:textColor="@color/text_header"
+                        android:textSize="@dimen/cell_pri_textSize" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:background="@drawable/edittext">
+
+
+                        <TextView
+                            android:id ="@+id/xTvStartDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_small"
+                            android:singleLine="true"
+                            android:textSize="@dimen/registration_text_size"
+                            android:textColor="@color/black"
+                            android:layout_weight="1.9"/>
+
+                        <ImageView
+                            android:id = "@+id/xIvStrtDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src = "@drawable/ic_calander_14"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id ="@+id/xTvEndDateLbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "End date"
+                        android:padding = "@dimen/margin_small"
+                        android:textColor="@color/text_header"
+                        android:textSize="@dimen/cell_pri_textSize" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:background="@drawable/edittext">
+
+                        <TextView
+                            android:id ="@+id/xTvEndDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_small"
+                            android:singleLine="true"
+                            android:textSize="@dimen/registration_text_size"
+                            android:textColor="@color/black"
+                            android:layout_weight="1.9"/>
+
+                        <ImageView
+                            android:id = "@+id/xIvEndDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src = "@drawable/ic_calander_14"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id ="@+id/xTvSpaceType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "Created by"
+                android:textColor="@color/text_header"
+                android:textSize="@dimen/cell_pri_textSize"
+                android:padding = "@dimen/margin_small"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext">
+
+                <Spinner
+                    android:id = "@+id/xSpinnerSpaceType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:dropDownSelector="@android:color/transparent"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_centerVertical="true">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/registration_text_size"
+                        android:layout_weight="1.9"
+                        android:layout_gravity="center_vertical"
+                        android:textColor = "@color/black"
+                        android:padding="@dimen/margin_small"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src = "@drawable/ic_arrow_drop_down_14"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id ="@+id/xTvTypeofSpace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "Type of space"
+                android:textColor="@color/text_header"
+                android:textSize="@dimen/cell_pri_textSize"
+                android:layout_marginTop="@dimen/skip_margin"
+                android:padding = "@dimen/margin_small"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext">
+
+                <Spinner
+                    android:id = "@+id/xSpinnerTypeofSpace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:dropDownSelector="@android:color/transparent"
+                    android:layout_centerVertical="true"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_centerVertical="true">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/registration_text_size"
+                        android:layout_weight="1.9"
+                        android:layout_gravity="center_vertical"
+                        android:textColor = "@color/black"
+                        android:padding="@dimen/margin_small"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src = "@drawable/ic_arrow_drop_down_14"
+                        android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/xTLaySpaceCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/flaotingtext"
+                android:paddingTop="@dimen/skip_margin"
+                android:paddingBottom="@dimen/skip_margin">
+
+                <EditText
+                    android:id ="@+id/xEtSpaceCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint = "Required no of spaces"
+                    android:singleLine="true"
+                    android:textSize="@dimen/registration_text_size"
+                    android:background="@drawable/edittext"
+                    android:padding = "@dimen/margin_small"
+                    android:inputType="number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/skip_margin"
+                android:weightSum="2">
+
+                <EditText android:id ="@+id/xEtPerSpaceCst"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint = "Per space cost"
+                    android:padding="@dimen/margin_small"
+                    android:singleLine="true"
+                    android:textSize="@dimen/registration_text_size"
+                    android:background="@drawable/edittext"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/skip_margin"/>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext">
+
+                    <Spinner
+                        android:id = "@+id/xSpPaymentMode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dropDownSelector="@android:color/transparent"
+                        android:background="@android:color/transparent"
+                        android:layout_centerVertical="true"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/registration_text_size"
+                            android:layout_weight="1.9"
+                            android:textColor = "@color/black"
+                            android:padding="@dimen/margin_small"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src = "@drawable/ic_arrow_drop_down_14"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/skip_margin"
+                android:weightSum="2">
+
+
+                <EditText
+                    android:id ="@+id/xEtTotalCst"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint = "Total cost"
+                    android:padding="@dimen/margin_small"
+                    android:singleLine="true"
+                    android:textSize="@dimen/registration_text_size"
+                    android:background="@drawable/edittext"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/skip_margin"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext">
+
+                    <Spinner
+                        android:id = "@+id/xSpPaymentMode1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dropDownSelector="@android:color/transparent"
+                        android:background="@android:color/transparent"
+                        android:layout_centerVertical="true" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/registration_text_size"
+                            android:layout_weight="1.9"
+                            android:layout_gravity="center_vertical"
+                            android:textColor = "@color/black"
+                            android:padding="@dimen/margin_small"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src = "@drawable/ic_arrow_drop_down_14"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id ="@+id/xTvUploadCamImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "Upload images"
+                android:textColor="@color/text_header"
+                android:textSize="@dimen/cell_pri_textSize"
+                android:padding = "@dimen/margin_small"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/skip_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_small">
+
+                    <ImageView
+                        android:id = "@+id/xIvCamImg1"
+                        android:layout_width="@dimen/img_width"
+                        android:layout_height="@dimen/img_height"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:background="@drawable/img_thumbnail"/>
+
+                    <ImageView
+                        android:id = "@+id/xIvCamImg2"
+                        android:layout_width="@dimen/img_width"
+                        android:layout_height="@dimen/img_height"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:background="@drawable/img_thumbnail"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id = "@+id/xIvCamImg3"
+                        android:layout_width="@dimen/img_width"
+                        android:layout_height="@dimen/img_height"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:background="@drawable/img_thumbnail"
+                        android:visibility="gone"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id = "@+id/xLinLayImgLay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id = "@+id/xIvCamImg4"
+                        android:layout_width="@dimen/img_width"
+                        android:layout_height="@dimen/img_height"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:background="@drawable/img_thumbnail"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id = "@+id/xIvCamImg5"
+                        android:layout_width="@dimen/img_width"
+                        android:layout_height="@dimen/img_height"
+                        android:background="@drawable/img_thumbnail"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:background="@color/button_grey"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/skip_margin"
+                android:layout_marginTop="@dimen/skip_margin">
+
+
+                <CheckBox
+                    android:id = "@+id/xCheckBoxTermsCondition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:button="@drawable/checkbox_selector"/>
+
+                <TextView
+                    android:id = "@+id/xTvTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "Terms &amp; condition"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/registration_text_size"
+                    android:padding="@dimen/margin_small"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_gravity="center_vertical"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id = "@+id/xTvCreateCampaign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "CREATE CAMPAIGN"
+        android:textSize="@dimen/cell_pri_textSize"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:padding="@dimen/registration_text_size"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
+
+
+

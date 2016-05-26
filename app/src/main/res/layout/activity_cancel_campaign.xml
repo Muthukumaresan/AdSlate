@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.adslate.activities.CreateCampaign"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/xRlActionBar1"
+            android:background="@color/purple"
+            android:padding="@dimen/image_padding"
+            android:layout_marginBottom="@dimen/margin_small">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/xIvBackButton"
+                android:src="@drawable/ic_ad_slate_action_bar_back_black"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create campaign"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/text_margin_left"/>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayCamDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginRight="@dimen/skip_margin">
+
+            <EditText
+                android:id ="@+id/xEtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "Campaign Description"
+                android:padding="@dimen/small_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/edittext"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginRight="@dimen/skip_margin" >
+
+            <TextView
+                android:id ="@+id/xTvUploadLogoLbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small_padding"
+                android:text = "Campaign logo"
+                android:textSize="@dimen/registration_text_size"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginRight="@dimen/skip_margin" />
+
+            <ImageView
+                android:id = "@+id/xIvCamLogo"
+                android:layout_width="@dimen/logo_width"
+                android:layout_height="@dimen/logo_height"
+                android:background="@color/purple"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_marginLeft="@dimen/skip_margin"
+                android:layout_marginRight="@dimen/skip_margin"
+                android:layout_marginTop="@dimen/skip_margin"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id ="@+id/xTvUploadCamImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_padding"
+            android:text = "Upload sample campaign Images"
+            android:textSize="@dimen/registration_text_size"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginRight="@dimen/skip_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginRight="@dimen/skip_margin">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_small">
+
+                <ImageView
+                    android:id = "@+id/xIvCamImg1"
+                    android:layout_width="@dimen/img_width"
+                    android:layout_height="@dimen/img_height"
+                    android:background="@color/purple"
+                    android:layout_marginRight="@dimen/margin_small"/>
+
+                <ImageView
+                    android:id = "@+id/xIvCamImg2"
+                    android:layout_width="@dimen/img_width"
+                    android:layout_height="@dimen/img_height"
+                    android:background="@color/purple"
+                    android:layout_marginRight="@dimen/margin_small"/>
+
+                <ImageView
+                    android:id = "@+id/xIvCamImg3"
+                    android:layout_width="@dimen/img_width"
+                    android:layout_height="@dimen/img_height"
+                    android:background="@color/purple"
+                    android:layout_marginRight="@dimen/margin_small"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small">
+
+                <ImageView
+                    android:id = "@+id/xIvCamImg4"
+                    android:layout_width="@dimen/img_width"
+                    android:layout_height="@dimen/img_height"
+                    android:background="@color/purple"
+                    android:layout_marginRight="@dimen/margin_small"/>
+
+                <ImageView
+                    android:id = "@+id/xIvCamImg5"
+                    android:layout_width="@dimen/img_width"
+                    android:layout_height="@dimen/img_height"
+                    android:background="@color/purple"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayCamText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:layout_marginBottom="@dimen/skip_margin">
+
+            <EditText
+                android:id ="@+id/xEtCamTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "Text to display with campaign image"
+                android:padding="@dimen/small_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayTargetdLocatn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:layout_marginBottom="@dimen/skip_margin">
+
+            <EditText
+                android:id ="@+id/xEtTargetdLocatn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "Targeted location"
+                android:padding="@dimen/small_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginBottom="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/help_margin">
+
+                <TextView
+                    android:id ="@+id/xTvStartDateLbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_small"
+                    android:text = "Start date"
+                    android:textSize="@dimen/registration_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/edittext">
+
+
+                    <TextView
+                        android:id ="@+id/xTvStartDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_small"
+                        android:singleLine="true"
+                        android:textSize="@dimen/registration_text_size"
+                        android:textColor="@color/black"
+                        android:layout_weight="1.9"/>
+
+                    <ImageView
+                        android:id = "@+id/xIvStrtDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src = "@android:drawable/ic_dialog_dialer"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id ="@+id/xTvEndDateLbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_small"
+                    android:text = "End date"
+                    android:textSize="@dimen/registration_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/edittext">
+
+                    <TextView
+                        android:id ="@+id/xTvEndDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_small"
+                        android:singleLine="true"
+                        android:textSize="@dimen/registration_text_size"
+                        android:textColor="@color/black"
+                        android:layout_weight="1.9"/>
+
+                    <ImageView
+                        android:id = "@+id/xIvEndDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src = "@android:drawable/ic_dialog_dialer"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLaySpaceType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:layout_marginBottom="@dimen/skip_margin">
+
+            <EditText
+                android:id ="@+id/xEtSpaceType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "Space type"
+                android:padding="@dimen/small_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayTypeOfSpace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:layout_marginBottom="@dimen/skip_margin">
+
+            <EditText
+                android:id ="@+id/xEtTypeOfSpace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "Type of space"
+                android:padding="@dimen/small_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLaySpaceCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginBottom="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin">
+
+            <EditText
+                android:id ="@+id/xEtSpaceCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "Required no of spaces"
+                android:padding="@dimen/small_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext"
+                android:inputType="number"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/xTLayCamCst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/flaotingtext"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginBottom="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin">
+
+            <EditText
+                android:id ="@+id/xEtCamCst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint = "Campaign cost"
+                android:padding="@dimen/small_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/registration_text_size"
+                android:background="@drawable/edittext"
+                android:inputType="number"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/skip_margin"
+            android:background="@color/button_grey"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Reason to cancel"
+            android:textSize="@dimen/registration_text_size"
+            android:layout_marginLeft="@dimen/header_text"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:layout_marginTop="@dimen/skip_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/header_text"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:gravity="center_vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/xTLayCanReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="140"
+                app:counterTextAppearance="@style/counterText"
+                app:hintTextAppearance="@style/flaotingtext" >
+
+                <EditText
+                    android:id ="@+id/xEtCancelreason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_small"
+                    android:inputType="textMultiLine"
+                    android:textSize="@dimen/registration_text_size"
+                    android:maxLength="140"
+                    android:background="@drawable/descbackground"
+                    android:layout_margin="@dimen/margin_small"
+                    android:minLines="5"
+                    android:gravity="top"
+                    android:lineSpacingExtra="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:id = "@+id/xTvCreateCampaign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Cancel campaign"
+            android:textSize="@dimen/registration_text_size"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:padding="@dimen/margin_small"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/skip_margin"
+            android:layout_marginBottom="@dimen/skip_margin"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+

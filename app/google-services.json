@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_id": "adslate-1153",
+    "project_number": "1089378992963",
+    "name": "AdSlate"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089378992963:android:bebaee00ed744be5",
+        "client_id": "android:com.adslate",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.adslate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089378992963-nl5p4lt3svlku2s1qkc80rdlrbjrm354.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adslate",
+            "certificate_hash": "BA004E5BDD3A977AAE2D9F965EB3544E2DE9427A"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

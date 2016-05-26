@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/skip_margin">
+
+
+        <com.adslate.helperclasses.RoundedImageView
+            android:id = "@+id/xRIvContactPic"
+            android:layout_width="@dimen/cont_img_width"
+            android:layout_height="@dimen/cont_img_height"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/xRIvContactPic"
+            android:layout_marginLeft="@dimen/skip_margin" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="John Appleseed"
+                android:textSize="@dimen/registration_text_size"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7C Studio Creative Pvt Ltd."
+                android:textSize="@dimen/cell_pri_textSize"
+                android:textColor="@color/grey" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

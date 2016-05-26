@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id ="@+id/xTvCampaignFor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding"
+        android:text = "Campaign for"
+        android:textColor="@color/black"
+        android:textSize="@dimen/registration_text_size"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"/>
+
+    <ImageView
+        android:id = "@+id/xIvCamLogo"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"/>
+
+    <TextView
+        android:id ="@+id/xTvCampaignName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding"
+        android:text = "Pepsico Co India Pvt.Ltd"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/cell_pri_textSize"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@color/divider"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"/>
+
+
+    <TextView
+        android:id ="@+id/xTvAbtCampaign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding"
+        android:text = "About campaign"
+        android:textColor="@color/black"
+        android:textSize="@dimen/registration_text_size"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/small_padding"
+        android:text = "About campaign detail description is to be written here
+Tabs enable content organization at a high level, such as switching between views, data sets, or functional aspects of an app.
+Present tabs as a single row above their associated content. Tab labels should succinctly describe the content within.
+Because swipe gestures are used for navigating between tabs, don't pair tabs with content that also supports swiping.
+When to use.Use tabs to organize content at a high level, for example, to present different sections of a newspaper. Don’t use tabs for carousels or pagination of content. Those use cases involve viewing content, not navigating between groups of content.
+For more detail about using tabs for navigating top-level views, see “Tabs” in Patterns > Navigation.
+Don't use tabs with content that supports the swipe gesture, because swipe gestures are used for navigating between tabs."
+        android:textColor="@color/grey"
+        android:textSize="@dimen/cell_pri_textSize"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

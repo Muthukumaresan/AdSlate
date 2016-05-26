@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/skip_margin"
+    android:layout_marginRight="@dimen/skip_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Your Contract History"
+        android:textSize="@dimen/registration_text_size"
+        android:padding="@dimen/small_padding"
+        android:layout_marginTop="@dimen/skip_margin" />
+
+
+    <ListView
+        android:id="@+id/xlistContractHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"/>
+
+</LinearLayout>

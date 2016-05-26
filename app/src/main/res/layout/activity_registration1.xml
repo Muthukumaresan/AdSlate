@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adslate.activities.Registration1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/xRlActionBar1"
+            android:background="@color/purple"
+            android:padding="@dimen/image_padding">
+
+            <ImageView
+                android:id = "@+id/xIvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_ad_slate_action_bar_back_black"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Register"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/text_margin_left"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/skip_margin"
+        android:text = "Sed ut persicipatus unde omnis"
+        android:textColor="@color/black"
+            android:textSize="@dimen/registration_text_size"/>
+
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text = "Accunsantium doremwn"
+        android:textSize="@dimen/registration_text_size"
+            android:paddingBottom="@dimen/skip_margin"/>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/xTLayFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/flaotingtext"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"
+        android:paddingBottom="@dimen/skip_margin">
+
+
+    <EditText
+        android:id ="@+id/xEtFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Full Name"
+        android:padding="@dimen/small_padding"
+        android:singleLine="true"
+        android:textSize="@dimen/registration_text_size"
+        android:inputType="textPersonName"
+        android:background="@drawable/edittext" />
+
+       </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/xTLayEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/flaotingtext"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"
+        android:paddingBottom="@dimen/skip_margin">
+
+
+        <EditText
+            android:id ="@+id/xEtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint = "Email"
+            android:padding="@dimen/margin_small"
+            android:singleLine="true"
+            android:textSize="@dimen/registration_text_size"
+            android:background="@drawable/edittext" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+            android:id = "@+id/xTvRegisterNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "REGISTER NOW"
+        android:textSize="@dimen/registration_text_size"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:layout_margin = "@dimen/help_margin"
+        android:padding="@dimen/margin_small"
+            android:gravity="center"/>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/skip_margin">
+
+
+        <TextView
+            android:id = "@+id/xTvMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Already a member ?"
+            android:textSize="@dimen/registration_text_size"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id = "@+id/xTvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Tap to Login"
+            android:textSize="@dimen/registration_text_size"
+            android:textColor="@color/orange"
+            android:layout_marginLeft="@dimen/skip_margin"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:id = "@+id/xVwLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/divider"
+        android:layout_marginTop="@dimen/help_margin"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"/>
+
+        <LinearLayout
+            android:id = "@+id/xLinLaySocialMedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_margin="@dimen/skip_margin">
+
+
+            <ImageView
+                android:id = "@+id/xIvFaceBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src = "@drawable/ic_ad_slate_login_fb"/>
+
+
+            <ImageView
+                android:id = "@+id/xIvGooglePlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src = "@drawable/ic_ad_slate_login_g_pluse"
+                android:layout_marginLeft="@dimen/skip_margin" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

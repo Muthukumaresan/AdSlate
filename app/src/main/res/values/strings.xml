@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">AdSlate</string>
+    <string name="app_id">895637453855847</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_registration1">Registration1</string>
+    <string name="title_activity_registration2">Registration2</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_terms_and_condition">TermsAndCondition</string>
+    <string name="title_activity_privacy_policy">PrivacyPolicy</string>
+    <string name="title_activity_trial">TrialActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_otpscreen">OTPScreen</string>
+    <string name="title_activity_host_space">HostSpace</string>
+
+
+    <string-array name="monthly_yearly">
+        <item>Yearly</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string-array name ="dimens">
+        <item>Sq ft</item>
+        <item>ft</item>
+    </string-array>
+
+    <string-array name="vehicleType">
+        <item>Auto rickshaw</item>
+        <item>Bike</item>
+        <item>Car</item>
+    </string-array>
+
+    <string-array name="oneDoor">
+        <item>1 door</item>
+        <item>2 door</item>
+    </string-array>
+
+    <string-array name="bothDoor">
+        <item>2 doors</item>
+        <item>4 doors</item>
+    </string-array>
+
+    <string-array name="signsPerGate">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="gateDimens">
+        <item>m</item>
+        <item>cm</item>
+    </string-array>
+
+
+</resources>
+
+
+

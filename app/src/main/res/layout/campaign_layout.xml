@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id = "@+id/xRelLayFooter"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/small_padding"
+    android:background="@drawable/background3">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="@dimen/skip_margin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id = "@+id/xTvCampaignName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Tesla Model X Promotion"
+            android:textColor="@color/white"
+            android:layout_margin ="@dimen/small_padding"
+            android:textSize = "@dimen/cell_pri_textSize"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id = "@+id/xLinLayNoOfSubscription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  />
+
+
+                <TextView
+                    android:id = "@+id/xTvSubscribedNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text = "128/"
+                    android:layout_marginLeft="@dimen/small_padding"
+                    android:layout_gravity="center_vertical"
+                    android:textSize = "@dimen/cell_sec_textSize"/>
+
+
+                <TextView
+                    android:id = "@+id/xTvThresholdNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text = "200"
+                    android:layout_gravity="center_vertical"
+                    android:textSize = "@dimen/cell_sec_textSize"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id = "@+id/xLinLayDaysLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_toRightOf="@+id/xLinLayNoOfSubscription" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                />
+
+
+                <TextView
+                    android:id = "@+id/xTvDaysLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text = "3"
+                    android:layout_marginLeft="@dimen/small_padding"
+                    android:layout_gravity="center_vertical"
+                    android:textSize = "@dimen/cell_sec_textSize"/>
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id = "@+id/xLinLayLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_padding"
+            android:layout_marginBottom="@dimen/small_padding">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             />
+
+
+            <TextView
+                android:id = "@+id/xTvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text = "Malleshwaram"
+                android:layout_marginLeft="@dimen/small_padding"
+                android:layout_gravity="center_vertical"
+                android:textSize = "@dimen/cell_sec_textSize"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

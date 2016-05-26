@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Available cities"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:padding="@dimen/margin_small"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext">
+
+        <Spinner
+            android:id = "@+id/xSpRadioCities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:dropDownSelector="@android:color/transparent"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_centerVertical="true">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/registration_text_size"
+                android:layout_weight="1.9"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/margin_small"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src = "@drawable/ic_arrow_drop_down_14"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Radio stations"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:layout_marginTop="@dimen/skip_margin"
+            android:padding="@dimen/margin_small"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext">
+
+            <Spinner
+                android:id = "@+id/xSpRadioStatns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:dropDownSelector="@android:color/transparent"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_centerVertical="true">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/registration_text_size"
+                    android:layout_weight="1.9"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/margin_small"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src = "@drawable/ic_arrow_drop_down_14"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Description"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:layout_marginTop="@dimen/skip_margin"
+            android:padding="@dimen/margin_small"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/skip_margin">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/xTLayDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="140"
+                app:counterTextAppearance="@style/counterText"
+                app:hintTextAppearance="@style/flaotingtext" >
+
+                <EditText
+                    android:id ="@+id/xEtDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_small"
+                    android:inputType="textMultiLine"
+                    android:textSize="@dimen/registration_text_size"
+                    android:maxLength="140"
+                    android:background="@drawable/descbackground"
+                    android:minLines="5"
+                    android:gravity="top"
+                    android:lineSpacingExtra="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

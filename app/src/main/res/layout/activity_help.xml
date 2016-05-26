@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.adslate.activities.Help"
+    android:background="@color/help_grey">
+
+
+    <android.support.v4.view.ViewPager
+        android:id = "@+id/xVPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/xLinLayPageIndicator" />
+
+
+    <LinearLayout
+        android:id = "@+id/xLinLayPageIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicators"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:padding="10dip"
+            app:radius="@dimen/circular_indicator_radius"
+            app:fillColor="@color/purple"
+            app:strokeWidth="2dp"/>
+
+        <TextView
+            android:id = "@+id/xTvSkip"
+            android:text="Skip"
+            android:padding="@dimen/skip_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_skip"
+            android:gravity="center_horizontal"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

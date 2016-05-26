@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.CampaignDetailsPage">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xRlActionBar1"
+        android:background="@color/purple"
+        android:padding="@dimen/image_padding"
+        android:layout_marginBottom="@dimen/margin_small">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xIvBackButton"
+            android:src="@drawable/ic_ad_slate_action_bar_back_black"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id = "@+id/xTvCamNameHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/text_margin_left"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/xRlActionBar1"
+        android:layout_above="@+id/xTvSubscribeNow">
+
+
+        <TextView
+            android:id = "@+id/xTvCamName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "Campaign Name"
+            android:textColor = "@color/black"
+            android:textSize="@dimen/splash_text_size"
+            android:layout_marginLeft="@dimen/skip_margin"
+            android:padding="@dimen/small_padding" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/xRelLaySpcType"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id = "@+id/xIvSpcType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_taxi_14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/skip_margin"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vehicle"
+                        android:textSize="@dimen/registration_text_size"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_toRightOf="@+id/xIvSpcType"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/line_width"
+                android:layout_height="match_parent"
+                android:background="@color/divider"
+                android:layout_toRightOf="@+id/xRelLaySpcType"
+                android:layout_gravity="center_vertical" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/xRelLayCamCst"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id = "@+id/xIvCamCst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_money_14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/skip_margin"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_toRightOf="@+id/xIvCamCst">
+
+                    <TextView
+                        android:id = "@+id/xTvCamCst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="70,00,00,000"
+                        android:textSize="@dimen/registration_text_size"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INR/month"
+                        android:textSize="@dimen/cell_pri_textSize"
+                        android:textColor="@color/grey"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_toRightOf="@+id/xTvCamCst"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/skip_margin"
+            android:layout_marginRight="@dimen/skip_margin"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/xRelSubStatus"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id = "@+id/xIvSubStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_user_14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/skip_margin"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_toRightOf="@+id/xIvSubStatus">
+
+                    <TextView
+                        android:id = "@+id/xTvSubStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="250/100"
+                        android:textSize="@dimen/registration_text_size"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subscribed"
+                        android:textSize="@dimen/cell_pri_textSize"
+                        android:textColor="@color/grey"
+                        android:layout_toRightOf="@+id/xTvSubStatus"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_centerVertical="true"/>
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/line_width"
+                android:layout_height="match_parent"
+                android:background="@color/divider"
+                android:layout_toRightOf="@+id/xRelLaySubStatus"
+                android:layout_gravity="center_vertical" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/xRelLaySubTimeFrame"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id = "@+id/xIvSubTimeFrame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_calander_14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/skip_margin"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/xIvSubTimeFrame"
+                    android:layout_marginLeft="@dimen/margin_small">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7"
+                        android:textSize="@dimen/registration_text_size"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="days left"
+                        android:textSize="@dimen/cell_pri_textSize"
+                        android:textColor="@color/grey"
+                        android:layout_marginLeft="@dimen/margin_small"/>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id = "@+id/xVpImages"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cell_width"
+            android:layout_marginTop="@dimen/skip_margin" />
+
+
+        <android.support.design.widget.TabLayout
+            android:id = "@+id/xTabCamDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMaxWidth="0dp"
+            app:tabGravity="fill"
+            app:tabTextAppearance="@style/TabText"
+            app:tabIndicatorColor="@color/divider"/>
+
+        <android.support.v4.view.ViewPager
+            android:id = "@+id/xVpCamDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id= "@+id/xTvSubscribeNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBSCRIBE NOW"
+        android:textColor="@color/white"
+        android:padding="@dimen/registration_text_size"
+        android:textSize="@dimen/registration_text_size"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/xVwLine"
+        android:background="@color/orange"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

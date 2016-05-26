@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"
+        android:padding="@dimen/small_padding"
+        android:weightSum="2">
+
+        <TextView
+            android:id = "@+id/xTvParam1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Vehicle type"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": "
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Personal"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/black"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"
+        android:padding="@dimen/small_padding"
+        android:weightSum="2">
+
+        <TextView
+            android:id = "@+id/xTvParam4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Price range"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": "
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="40,000 - 50,000"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/black"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"
+        android:padding="@dimen/small_padding"
+        android:weightSum="2">
+
+        <TextView
+            android:id = "@+id/xTvParam5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Kilometers driven"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": "
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="50km"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/black"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"
+        android:padding="@dimen/small_padding"
+        android:weightSum="2">
+
+        <TextView
+            android:id = "@+id/xTvParam6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Age of vehicle"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": "
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1 year"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/black"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"
+        android:padding="@dimen/small_padding"
+        android:weightSum="2">
+
+        <TextView
+            android:id = "@+id/xTvParam7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Space made available"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": "
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1 door"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/black"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"
+        android:padding="@dimen/small_padding"
+        android:weightSum="2">
+
+        <TextView
+            android:id = "@+id/xTvParam8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": "
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Banglore"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/black"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"
+        android:padding="@dimen/small_padding"
+        android:weightSum="2">
+
+        <TextView
+            android:id = "@+id/xTvParam9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Daily route map"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": "
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Majestic - Indiranagar"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/black"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"
+        android:padding="@dimen/small_padding"
+        android:weightSum="2">
+
+        <TextView
+            android:id = "@+id/xTvParam10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Registration no."
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": "
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="KA 25 M 1536"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/black"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"
+        android:padding="@dimen/small_padding"
+        android:weightSum="2">
+
+        <TextView
+            android:id = "@+id/xTvParam11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Work place/Institute name"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": "
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rossitek"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/black"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/skip_margin"
+        android:layout_marginRight="@dimen/skip_margin"
+        android:padding="@dimen/small_padding"
+        android:weightSum="2">
+
+        <TextView
+            android:id = "@+id/xTvParam12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": "
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/grey"
+            android:layout_weight="0.2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" person bike which drives 20/day"
+            android:textSize="@dimen/cell_pri_textSize"
+            android:textColor="@color/black"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
