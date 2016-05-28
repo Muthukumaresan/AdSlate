@@ -28,6 +28,7 @@ import android.widget.Toast;
 import com.adslate.R;
 import com.adslate.baseclasses.BaseActivity;
 import com.adslate.helperclasses.GalleryHelper;
+import com.adslate.helperclasses.RangeSeekBar;
 import com.adslate.models.SpaceType;
 import com.adslate.storage.AdSlateDB;
 import com.adslate.utils.AdSlateUrlConnection;
@@ -83,6 +84,18 @@ public class HostSpace extends BaseActivity implements View.OnClickListener
         callSpaceTypeWebService();
 
         mInitialiseView();
+
+        // Setup the new range seek bar
+        RangeSeekBar<Integer> rangeSeekBar = new RangeSeekBar<Integer>(this);
+        // Set the range
+        rangeSeekBar.setRangeValues(0, 100);
+        rangeSeekBar.setSelectedMinValue(20);
+        rangeSeekBar.setSelectedMaxValue(88);
+
+        // Add to layout
+        LinearLayout layout = (LinearLayout) findViewById(R.id.seekbar_placeholder);
+        layout.addView(rangeSeekBar);
+
 
         mOptions =  new DisplayImageOptions.Builder().considerExifParams(true).build();
 
